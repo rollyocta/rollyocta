@@ -1,27 +1,61 @@
 import React from "react";
 import { Box } from "@mui/material";
-import "./Timeline.css"; // same CSS style as timeline
+import "./Timeline.css";
 
+// Add image/icon URLs for each skill
 const skillSet = [
   {
-    category: "Programming Languages",
-    skills: ["JavaScript", "HTML5", "CSS3", "PHP", "Python"],
+    category: "Programming & Scripting Languages",
+    skills: [
+      { name: "JavaScript", icon: "/icons/js.png" },,
+      { name: "PHP", icon: "/icons/php.jpg" },
+      { name: "Python", icon: "/icons/python.png" },
+      { name: "HTML5", icon: "/icons/html.png" },
+      { name: "CSS3", icon: "/icons/css.png" },
+      { name: "SCSS", icon: "/icons/scss.png" },
+    ],
   },
   {
-    category: "Frameworks / Libraries",
-    skills: ["React.js", "Express.js", "Node.js", "Laravel"],
+    category: "Frameworks / Frontend Libraries",
+    skills: [
+      { name: "React.js", icon: "/icons/React.png" },
+      { name: "Express.js", icon: "/icons/express.png" },
+      { name: "Node.js", icon: "/icons/node.png" },
+      { name: "Laravel", icon: "/icons/Laravel.png" },
+      { name: "Bootstrap", icon: "/icons/bootstrap.png" },
+      { name: "Material UI", icon: "/icons/matui.png" }
+    ],
   },
   {
     category: "Databases",
-    skills: ["Firebase Firestore", "MongoDB", "MySQL"],
+    skills: [
+      { name: "MongoDB", icon: "/icons/mongodb.png" },
+      { name: "MySQL", icon: "/icons/mysql.png" },
+    ],
+  },
+  {
+    category: "Version Control & Project Management",
+    skills: [
+      { name: "Git/GitHub", icon: "/icons/github.png" },
+      { name: "Git", icon: "/icons/git.png" },
+    ],
+  },
+  {
+    category: "Deployment & Web Hosting",
+    skills: [
+      { name: "InfinityFree", icon: "/icons/infinityfree.png" },
+      { name: "Hostinger", icon: "/icons/hostinger.png" },
+      { name: "Vercel", icon: "/icons/vercel.png" },
+    ],
   },
   {
     category: "Tools / Software",
-    skills: ["VS Code", "Git/GitHub", "Adobe Photoshop", "Canva"],
-  },
-  {
-    category: "Soft Skills",
-    skills: ["Problem Solving", "Communication", "Team Collaboration", "Time Management"],
+    skills: [
+      { name: "VS Code", icon: "/icons/vscode.png" },
+      { name: "Adobe Photoshop", icon: "/icons/adobe.png" },
+      { name: "Canva", icon: "/icons/canva.jpg" },
+      { name: "Postman (API Testing)", icon: "/icons/postman.png" },
+    ],
   },
 ];
 
@@ -44,7 +78,10 @@ const Skills = () => {
               <h3>{category.category}</h3>
               <ul className="skills-list">
                 {category.skills.map((skill, i) => (
-                    <li key={i}>{skill}</li>
+                  <li key={i}>
+                    <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                    {skill.name}
+                  </li>
                 ))}
               </ul>
             </div>

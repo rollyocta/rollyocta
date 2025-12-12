@@ -39,6 +39,21 @@
   color: #cbd5e1;
 }
 
+.project-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
 .tech-stack {
   display: flex;
   flex-wrap: wrap;
@@ -78,7 +93,6 @@
   opacity: 0.9;
 }
 
-/* Optional hover overlay */
 .design-item::after {
   content: "View";
   position: absolute;
@@ -99,10 +113,7 @@
   opacity: 1;
 }
 
-/* =======================
-   Image Preview Modal
-======================= */
-
+/* Modal */
 .image-modal {
   position: absolute;
   top: 50%;
@@ -119,7 +130,6 @@
 
 .image-modal img {
   width: 100%;
-  height: auto;
   max-height: 85vh;
   object-fit: contain;
   border-radius: 8px;

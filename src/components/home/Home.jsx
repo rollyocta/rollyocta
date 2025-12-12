@@ -8,6 +8,7 @@ import { FileDown, Linkedin, Github } from "lucide-react";
 import TabsLayout from "../tabs/TabsLayout";
 import Projects from "../projects/Projects";
 import Certificates from "../certificate/Certificate";
+import Contact from "../contact/Contact";
 
 const Home = () => {
   return (
@@ -86,6 +87,10 @@ const Home = () => {
 
       <div>
         <Certificates />
+      </div>
+
+      <div>
+        <Contact />
       </div>
     </Box>
   );

@@ -1,13 +1,17 @@
+/* ================================
+   TIMELINE BASE LAYOUT
+================================ */
+
 .timeline {
   position: relative;
-  margin-left: 40px; /* space for dots */
+  margin-left: 40px;
   padding: 20px 0;
-  border-left: 2px solid #ccc; /* vertical line */
+  border-left: 2px solid #ccc;
 }
 
 .timeline-item {
   display: flex;
-  align-items: flex-start; /* align top */
+  align-items: flex-start;
   position: relative;
   margin-bottom: 30px;
 }
@@ -15,15 +19,15 @@
 .timeline-dot {
   width: 16px;
   height: 16px;
-  background-color: #1976d2; /* blue */
+  background-color: #1976d2;
   border-radius: 50%;
   position: absolute;
-  left: -9px; /* half of dot width minus line width */
-  top: 4px; /* align with text */
+  left: -9px;
+  top: 4px;
 }
 
 .timeline-content {
-  margin-left: 30px; /* space between dot and content */
+  margin-left: 30px;
 }
 
 .timeline-content h3 {
@@ -33,37 +37,62 @@
 }
 
 .timeline-content h5 {
-  margin: 2px 0;
-  color: #666;
+  margin: 2px 0 8px 0;
+  color: #cccccc;
   font-weight: normal;
   font-size: 0.9rem;
 }
 
-.timeline-content ul li  {
-  margin: 4px 0 0 0;
-  font-size: 0.9rem;
-  color: #F5F5F5;
-}
+/* ================================
+   NORMAL LIST (Work & Education)
+================================ */
 
-.timeline-content ul.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 40px; /* row gap & column gap */
-  list-style-type: disc;
+.timeline-content ul:not(.skills-list) {
+  list-style: disc;
   padding-left: 20px;
-  margin: 0;
+  margin-top: 5px;
 }
 
-.timeline-content ul.skills-list li {
-  width: 50%; /* 2 columns */
+.timeline-content ul:not(.skills-list) li {
+  color: #F5F5F5;
   margin-bottom: 4px;
   font-size: 0.9rem;
 }
 
-/* Responsive: Mobile */
-@media (max-width: 600px) {
-  .timeline-content ul.skills-list li {
-    width: 100%; /* 1 column sa mobile */
-  }
+/* ================================
+   SKILLS (2 COLUMNS, ICONS)
+================================ */
+
+.timeline-content ul.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 25px;
+  list-style: none;
+  padding-left: 0;
+  margin: 12px 0 0 0;
 }
 
+.timeline-content ul.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #F5F5F5;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+  .timeline-content ul.skills-list {
+    grid-template-columns: 1fr;
+  }
+}
