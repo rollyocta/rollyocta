@@ -40,13 +40,20 @@ const Home = () => {
             </Typography>
 
             <Stack spacing={1} direction="row">
-              <Button variant="outlined">Resume <FileDown size={13} style={{ marginLeft: "8px" }} /> </Button>
+              <Button
+                variant="outlined"
+                component="a"
+                href="/RollyOctaCv.pdf"
+                download
+              >
+                Resume <FileDown size={13} style={{ marginLeft: "8px" }} />
+              </Button>
               <a href="https://www.linkedin.com/in/rolly-octa/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <Button>
                   <Linkedin />
                 </Button>
               </a>
-              <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <a href="https://github.com/rollyocta" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <Button>
                   <Github />
                 </Button>
