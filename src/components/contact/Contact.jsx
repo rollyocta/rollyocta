@@ -41,7 +41,7 @@ export default function ContactSection() {
       <div className="contact-container">
         <div className="contact-info">
           <h3>Contact Details</h3>
-          <p>Email: <span>renlywebsolutions@gmail.com</span></p>
+          <p>Email: <span>rollyocta05@gmail.com</span></p>
           <p>Location: <span>Cavite, Philippines</span></p>
         </div>
 

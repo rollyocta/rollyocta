@@ -39,9 +39,9 @@ const Home = () => {
               from the Philippines.
             </Typography>
 
-            <Stack spacing={2} direction="row">
+            <Stack spacing={1} direction="row">
               <Button variant="outlined">Resume <FileDown size={13} style={{ marginLeft: "8px" }} /> </Button>
-              {/* <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+              <a href="https://www.linkedin.com/in/rolly-octa/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                 <Button>
                   <Linkedin />
                 </Button>
@@ -50,7 +50,7 @@ const Home = () => {
                 <Button>
                   <Github />
                 </Button>
-              </a> */}
+              </a>
             </Stack>
           </Container>
         </Grid>

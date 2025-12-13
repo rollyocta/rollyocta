@@ -8,7 +8,6 @@ const Certificate = () => {
       <h2 className="cert-title">Certificates, Courses & Training</h2>
 
       <div className="cert-group">
-        <h3>Academic Background</h3>
 
         <div className="cert-card">
           <p>Dec 2025</p>

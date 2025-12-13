@@ -8,7 +8,7 @@ const workExperience = [
   {
     title: "Freelance Developer",
     company: "Renly Web Solutions",
-    period: "May 2023 - Present",
+    period: "May 2024 - Present",
     description: [
       "Developed React.js websites and UI components",
       "Implemented CRUD functionality using Firebase and MongoDB",
@@ -18,7 +18,7 @@ const workExperience = [
   {
     title: "Business Unit Planner",
     company: "SanMiguel Integrated Logistics Services Incorporated | General Trias Cavite ",
-    period: "Oct 2023 - March 2024 ",
+    period: "Oct 2024 - March 2025 ",
     description: [
       "Develop and manage demand and supply plans to meet customer service levels and business goals. ",
       "Perform daily transactions using SAP (e.g., goods receipt, stock transfers, invoice processing, purchase order creation, etc.) ",
