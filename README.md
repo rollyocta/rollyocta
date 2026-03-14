@@ -1,15 +1,16 @@
 Hi, I'm Rolly 👋
 
-💻 Web Developer
+💻 Web Developer | Full-Stack Enthusiast
 
-🚀 Currently learning MERN & Laravel
-
-🎯 Goal: Join a strong dev team
+🚀 Skilled in MERN stack, Laravel, and PHP-based applications
+🎯 Seeking opportunities to apply my skills in web development and contribute to a strong dev team
 
 Tech Stack:
-- Laravel
-- PHP
-- JavaScript
-- React
-- MongoDB
-- MySQL
+
+Frontend: React.js, JavaScript
+
+Backend: Laravel, PHP, Node.js
+
+Database / CMS: MongoDB, MySQL, Sanity
+
+Other Tools: Firebase, Tailwind CSS, Git
